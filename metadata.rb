@@ -1,6 +1,6 @@
 name 'mysnmp'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'The Authors1'
+maintainer_email 'you1@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures mysnmp'
 version '0.1.0'
