@@ -1,6 +1,7 @@
 ---
 driver:
   name: vagrant
+  box_download_insecure: true
   customize:
     memory: 1024
     cpus: 1
@@ -19,7 +20,8 @@ verifier:
   name: inspec
 
 platforms:
-  - name: centos-7
+  - name: bento/centos-7
+  - name: bento/almalinux-8
 
 suites:
   - name: default

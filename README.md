@@ -1,4 +1,4 @@
 # mysnmp
 
-TODO: Enter the cookbook description here.
+TODO: Add a SNMP RHEL device
 

@@ -10,7 +10,8 @@ name 'mysnmp'
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'mysnmp::default'
+run_list 'checkmka::agent-cmk'
 
 # Specify a custom source for a single cookbook:
 cookbook 'mysnmp', path: '.'
+cookbook 'checkmka', path: '../checkmka'
