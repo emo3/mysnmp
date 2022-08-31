@@ -6,7 +6,7 @@ maintainer_email 'you1@example.com'
 chef_version '>= 16.0'
 license 'All Rights Reserved'
 description 'Installs/Configures mysnmp'
-version '0.2.0'
+version '1.0.0'
 
 supports 'redhat'
 supports 'centos'
