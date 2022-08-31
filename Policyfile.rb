@@ -13,5 +13,5 @@ default_source :supermarket
 run_list 'mysnmp::default', 'checkmka::agent-cmk-snmp'
 
 # Specify a custom source for a single cookbook:
-cookbook 'mysnmp', path: '.'
-cookbook 'checkmka', path: '../checkmka'
+cookbook 'mysnmp',   path: '.'
+cookbook 'checkmka', git: 'https://github.com/emo3/checkmka.git'
