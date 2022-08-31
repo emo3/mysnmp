@@ -6,11 +6,11 @@ of CheckMK agent and SNMP monitoring.<br/>
 
 1) The agent monitoring is automated and should function without
    any interaction from the user.<br/>
-2) The SNMP monitoring is manual.<br/>
-   A) Add device to be monitored.<br/>
-   B) Activate Node.<br/>
-   C) Discover Services.<br/>
-   D) Activate Services on Node.<br/>
+2) The SNMP monitoring is manual. Files found on /tmp<br/>
+   A) Add device to be monitored. (add-checkmks-snmp.py)<br/>
+   B) Activate Node. (activate-checkmks.py)<br/>
+   C) Discover Services. (discover-checkmks2.py)<br/>
+   D) Activate Services on Node. (activate-checkmks.py)<br/>
 
 Usage:<br/>
    Add to Policyfile.rb run list:<br/>

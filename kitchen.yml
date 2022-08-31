@@ -6,7 +6,6 @@ driver:
     memory: 1024
     cpus: 1
   network:
-    # - ['public_network', bridge: '<%= ENV['ETH'] %>']
     - ['private_network', ip: '<%= ENV['CMA_IP'] %>']
 
 provisioner:
