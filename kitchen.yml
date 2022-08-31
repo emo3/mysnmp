@@ -6,7 +6,8 @@ driver:
     memory: 1024
     cpus: 1
   network:
-   - ['private_network', ip: '10.1.1.21']
+    # - ['public_network', bridge: '<%= ENV['ETH'] %>']
+    - ['private_network', ip: '<%= ENV['CMA_IP'] %>']
 
 provisioner:
   name: chef_zero
@@ -25,6 +26,11 @@ platforms:
 
 suites:
   - name: default
+    attributes:
+      cmk:
+        api_token: '<%= ENV['CMK_TOKEN'] %>'
+        agent_ip: '<%= ENV['CMA_IP'] %>'
+        server_ip: '<%= ENV['CMK_IP'] %>'
     verifier:
       inspec_tests:
         - test/integration/default
